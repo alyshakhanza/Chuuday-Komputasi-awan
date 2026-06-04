@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Cozy Earthy Soft Color Palette Configuration */
+  --color-sage-50: #F4FAF2;
+  --color-sage-100: #E2EBE0;
+  --color-sage-200: #C2D5BD;
+  --color-sage-300: #A2C09B;
+  --color-sage-500: #71936A;
+  --color-sage-600: #4F634E;
+  --color-sage-700: #3E4E3D;
+
+  --color-lilac-50: #FAF6FC;
+  --color-lilac-100: #F0E6F7;
+  --color-lilac-200: #DFCEF0;
+  --color-lilac-300: #CEB5E9;
+  --color-lilac-500: #9E74CD;
+  --color-lilac-600: #6A4D80;
+  --color-lilac-700: #553D66;
+
+  --color-sand-50: #FCFAF7;
+  --color-sand-100: #F5EBE0;
+  --color-sand-200: #E6D5C3;
+  --color-sand-300: #D5BEA6;
+  --color-sand-500: #B28F6C;
+  --color-sand-600: #7A614C;
+  --color-sand-700: #5E4A3B;
+
+  --color-sky-50: #F5FAFC;
+  --color-sky-100: #E5F1F4;
+  --color-sky-200: #CBDDE2;
+  --color-sky-300: #AAC8D0;
+  --color-sky-500: #6B9FA9;
+  --color-sky-600: #3B5D66;
+  --color-sky-700: #2E484F;
+
+  --color-cream-background: #FCFAF7;
+  --color-cream-card: #FFFFFF;
+}
+
+/* Custom styles for cute digital journal aesthetics */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-sand-50);
+  color: var(--color-sand-700);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Cozy Warm Dark Mode Overrides */
+.dark {
+  --color-sand-50: #2C2A26;
+  --color-cream-card: #3A3733;
+  --color-sand-100: #44413C;
+  --color-sand-200: #55514B;
+  --color-sand-300: #6B665F;
+  --color-sand-500: #C2BBB3;
+  --color-sand-600: #E3DDD5;
+  --color-sand-700: #F0EDE6;
+  --color-sand-800: #FFFFFF;
+  --color-cream-background: #2C2A26;
+  
+  --color-sage-50: #2E332D;
+  --color-sage-100: #384237;
+  --color-sage-200: #495747;
+  --color-sage-300: #5D6C5A;
+  --color-sage-500: #C2D5BD;
+  --color-sage-600: #A2C09B;
+  --color-sage-700: #E2EBE0;
+
+  --color-lilac-50: #342D3D;
+  --color-lilac-100: #3E3349;
+  --color-lilac-200: #4B3E57;
+  --color-lilac-300: #CEB5E9;
+  --color-lilac-500: #CEB5E9;
+  --color-lilac-600: #FAF6FC;
+
+  --color-sky-50: #2B3338;
+  --color-sky-100: #323C42;
+  --color-sky-200: #404B52;
+  --color-sky-300: #6B9FA9;
+  --color-sky-500: #CBDDE2;
+  
+  background-color: #2C2A26;
+  color: #F0EDE6;
+}
+
+.dark body {
+  background-color: #2C2A26;
+  color: #F0EDE6;
+}
+
+/* Custom scrollbar to keep it organic and cute */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-sand-50);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-sand-200);
+  border-radius: 9999px;
+  border: 2px solid var(--color-sand-50);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sand-300);
+}
+
+/* Card Subtle Soft Shadows */
+.paper-shadow {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.paper-shadow-lg {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.paper-shadow-sm {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* Micro animations keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+@keyframes moodBounce {
+  0%, 100% { transform: scale(1.05); }
+  50% { transform: scale(1.22) translateY(-4px); }
+}
+
+.animate-mood-bounce {
+  animation: moodBounce 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+/* Motion transition presets */
+.cozy-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
