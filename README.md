@@ -1,6 +1,6 @@
 # 🌿 ChuuDay — Your Day. Your Story. Your ChuuDay.
 
-> **ChuuDay** adalah aplikasi fitness journaling harian yang terasa seperti sahabat dekat, bukan pelatih yang ketat. Setiap hari aktifmu punya cerita yang layak untuk diingat dan dirayakan.
+> **ChuuDay** adalah aplikasi fitness journaling harian yang terasa seperti sahabat. Setiap hari aktifmu punya cerita yang layak untuk diingat dan dirayakan.
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-ChuuDay-C8DDD4?style=for-the-badge)](https://chuuday-862792092664.asia-southeast1.run.app)
 [![Built with Gemini](https://img.shields.io/badge/Built_with-Gemini_AI-4285F4?style=for-the-badge&logo=google)](https://ai.google.dev/)
@@ -11,7 +11,7 @@
 
 ## 💭 Latar Belakang
 
-Aplikasi fitness yang ada saat ini terlalu fokus pada data numerik dan kompetisi. Tidak ada ruang untuk mencatat perasaan, musik, dan momen kecil yang membuat setiap hari aktif terasa bermakna.
+Aplikasi fitness yang ada saat ini terlalu fokus pada data numerik dan kompetisi. Tidak ada ruang untuk mencatat perasaan, musik, dan momen kecil yang membuat setiap hari aktif terasa bermakna. Saya ingin mengabadikan segala perjalanan aktivitas olahraga yang nantinya akan bisa terus dikenang
 
 **ChuuDay hadir untuk mengisi celah itu.**
 
